@@ -5,6 +5,14 @@ Ditulis dengan Python + Tkinter, tanpa perlu memasang paket tambahan di Windows.
 
 **By HDZMXX**
 
+## Unduh
+
+- **[Unduh BelSekolah.exe](https://github.com/hdzmxx/Bel-Sekolah/releases/latest/download/BelSekolah.exe)** (langsung mengunduh versi terbaru)
+- [Halaman rilis](https://github.com/hdzmxx/Bel-Sekolah/releases/latest) (catatan versi dan semua berkas)
+
+Simpan `BelSekolah.exe` di folder tetap (mis. `C:\BelSekolah`) lalu jalankan.
+Tidak perlu memasang Python. Untuk Windows 7 lihat bagian [Windows 7](#windows-7) di bawah.
+
 ## Fitur
 
 - Jadwal bel per hari: Senin–Minggu, atau gabungan **Senin–Kamis**, **Senin–Jumat**, **Senin–Sabtu**.
@@ -43,6 +51,11 @@ pyinstaller --noconsole --onefile --name BelSekolah bel_sekolah.py
 
 Hasilnya ada di `dist/BelSekolah.exe`. Simpan di folder tetap (mis. `C:\BelSekolah`);
 folder `data` dan `nada` akan dibuat di sebelahnya.
+
+**Membungkus nada sendiri:** taruh file mp3/wav di folder `nada` (sejajar dengan `bel_sekolah.py`)
+sebelum menjalankan `build.bat`. File-file itu ikut dibungkus ke dalam exe dan disalin ke folder
+`nada` di sebelah exe saat pertama kali dijalankan. Folder `nada` tidak ikut ke GitHub
+(lihat `.gitignore`), jadi pembuatan exe dilakukan di komputer yang punya file nadanya.
 
 ### Windows 7
 
