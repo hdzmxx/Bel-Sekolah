@@ -3,7 +3,6 @@
 Aplikasi desktop untuk membunyikan bel sekolah secara otomatis sesuai jadwal.
 Ditulis dengan Python + Tkinter, tanpa perlu memasang paket tambahan di Windows.
 
-**By HDZMXX**
 
 ## Unduh
 
@@ -13,18 +12,54 @@ Ditulis dengan Python + Tkinter, tanpa perlu memasang paket tambahan di Windows.
 Simpan `BelSekolah.exe` di folder tetap (mis. `C:\BelSekolah`) lalu jalankan.
 Tidak perlu memasang Python. Untuk Windows 7 lihat bagian [Windows 7](#windows-7) di bawah.
 
-## Fitur
+## Fitur unggulan
 
-- Jadwal bel per hari: Senin–Minggu, atau gabungan **Senin–Kamis**, **Senin–Jumat**, **Senin–Sabtu**.
-- Beberapa kategori jadwal (mis. *Reguler*, *Ujian*) yang bisa dipindah dengan satu klik.
-- Halaman Jadwal otomatis menampilkan **hari yang sedang berjalan** (bisa diganti lewat filter).
-- Nada bawaan (Ding-dong, Bel panjang) atau file **mp3/wav** sendiri.
-- Tambah jadwal beruntun dengan opsi *Buat lagi setelah simpan* dan *Pertahankan data yang diisi*.
-- Beranda berisi jam besar, hitung mundur bel berikutnya, dan daftar jadwal hari ini.
-- Pengaturan nama sekolah, alamat, volume, dan jalan otomatis saat Windows menyala.
-- **Ekspor / Impor** jadwal beserta file nada dalam satu berkas `.zip` (mode *Ganti* atau *Gabung*),
-  sehingga mudah dipindah ke komputer lain.
-- Mode portabel: data disimpan di folder `data/` dan `nada/` di sebelah aplikasi.
+**Presisi sampai hitungan detik**
+Jam bel diatur dalam format jam:menit:detik, bukan hanya jam:menit. Bel berbunyi tepat pada detik yang
+ditentukan, dan tidak berbunyi berulang-ulang dalam detik yang sama.
+
+**Pilihan hari yang fleksibel**
+Selain hari tunggal (Senin sampai Minggu), tersedia pilihan gabungan **Senin–Kamis**, **Senin–Jumat**, dan
+**Senin–Sabtu**. Cocok untuk sekolah yang jam pulang hari Jumat-nya berbeda: cukup buat satu jadwal
+Senin–Kamis dan satu jadwal Jumat, tanpa mengetik ulang per hari.
+
+**Kategori jadwal yang bisa dipindah satu klik**
+Simpan beberapa set jadwal sekaligus, misalnya *Reguler*, *Ujian*, atau *Ramadan*, lalu ganti jadwal aktif dari
+dropdown di Beranda. Tidak perlu menghapus dan membuat ulang jadwal setiap kali kalender sekolah berubah.
+
+**Tampilan yang langsung relevan**
+- Halaman Jadwal otomatis menampilkan **jadwal hari ini** dan ikut berganti saat tengah malam.
+- Beranda menampilkan jam besar, hitung mundur ke bel berikutnya, dan status tiap bel hari ini
+  (Sudah / Berikutnya / Menunggu).
+- Menambah banyak jadwal sekaligus dipermudah dengan opsi *Buat lagi setelah simpan* dan
+  *Pertahankan data yang diisi*.
+
+**Mudah dipindah ke komputer lain**
+- **Ekspor / Impor** membungkus semua jadwal dan file nada ke satu berkas `.zip`.
+- Saat impor, pilih **Ganti** (timpa semuanya) atau **Gabung** (tambahkan tanpa duplikat dan tanpa mengubah
+  nama sekolah dan volume).
+- **Mode portabel:** data tersimpan di folder `data/` dan `nada/` di sebelah aplikasi, jadi satu folder bisa
+  disalin begitu saja.
+
+**Bel yang tetap berbunyi**
+- Mencegah komputer masuk mode tidur selama bel aktif.
+- Bisa **jalan otomatis saat Windows menyala**, sehingga bel tetap hidup setelah komputer dihidupkan ulang.
+- Pemutar suara punya **cadangan**: jika pemutar utama Windows gagal membuka sebuah mp3, aplikasi mencoba
+  lewat Windows Media Player (PowerShell).
+
+**Ringan dan mandiri**
+- Satu berkas `.exe`, tanpa instalasi dan tanpa Python di komputer sekolah.
+- Bekerja **sepenuhnya offline**, tanpa akun dan tanpa internet.
+- Dapat dibuat untuk **Windows 7** (lihat bagian di bawah).
+- Nada bawaan (Ding-dong dan Bel panjang) dibuat oleh aplikasi sendiri, atau pakai **mp3/wav** milik sekolah.
+  Nada sendiri bisa dibungkus ke dalam exe.
+
+## Fitur lainnya
+
+- Pengaturan nama sekolah, alamat, dan volume (dengan tombol tes suara).
+- Tombol **Coba bunyikan** untuk mendengar nada sebuah jadwal sebelum dipakai.
+- Tombol **Hentikan suara** untuk menghentikan bel yang sedang berbunyi.
+- Menu **Kumpulkan semua nada ke folder nada** untuk merapikan file nada yang tersebar.
 
 ## Menjalankan
 
