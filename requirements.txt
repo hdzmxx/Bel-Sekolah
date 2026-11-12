@@ -1,0 +1,3 @@
+# Di Windows tidak perlu paket tambahan (suara memakai pemutar bawaan Windows).
+# Di Linux/macOS, suara membutuhkan pygame:
+pygame; sys_platform != "win32"

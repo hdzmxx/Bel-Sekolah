@@ -1,0 +1,26 @@
+# Data pengguna (jadwal, nama sekolah, nada) - jangan ikut ke repo
+data/
+nada/
+config.json
+putar.ps1
+
+# Hasil build PyInstaller
+build/
+dist/
+*.spec
+*.exe
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Berkas ekspor jadwal
+bel-sekolah-*.zip
+
+# Editor / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
